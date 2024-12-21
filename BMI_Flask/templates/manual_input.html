@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Input BMI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container_manual">
+        <h1>Pengecekan Body Mass Index</h1>
+        <div class="form-box">
+            <div class="form-item">
+                <label for="weight">Berat Badan (kg):</label>
+                <input type="number" id="weight" placeholder="Masukkan berat badan" required>
+            </div>
+            <div class="form-item">
+                <label for="height">Tinggi Badan (cm):</label>
+                <input type="number" id="height" placeholder="Masukkan tinggi badan" required>
+            </div>
+            <div class="form-item">
+                <label for="method">Metode Perhitungan:</label>
+                <select id="method">
+                    <option value="iterative">Iteratif</option>
+                    <option value="recursive">Rekursif</option>
+                </select>
+            </div>
+            <button id="calculateBmiBtn" class="btn">Hitung BMI</button>
+        </div>
+        <div class="result-box" id="bmiResult">
+            <!-- Hasil BMI akan ditampilkan di sini -->
+        </div>
+    </div>
+    <script src="/static/manual_input.js"></script>
+</body>
+</html>

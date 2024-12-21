@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Jumlah Data dan Metode</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pilih Jumlah Data dan Metode untuk Dihitung</h1>
+
+        <!-- Pilihan jumlah data -->
+        <div class="input-box">
+            <label for="dataSize">Pilih jumlah data:</label>
+            <select id="dataSize">
+                <option value="50">50 Data</option>
+                <option value="100">100 Data</option>
+                <option value="300">300 Data</option>
+                <option value="500">500 Data</option>
+                <option value="1000">1000 Data</option>
+            </select>
+        </div>
+
+        <!-- Pilihan metode -->
+        <div class="input-box">
+            <label for="method">Pilih metode:</label>
+            <select id="method">
+                <option value="recursive">Rekursif</option>
+                <option value="iterative">Iteratif</option>
+                <option value="compare">Perbandingan</option>
+            </select>
+        </div>
+
+        <button id="calculateBtn" class="btn">Hitung</button>
+    </div>
+
+    <!-- Grafik -->
+    <div class="chart-container">
+        <canvas id="chart"></canvas>
+    </div>
+
+    <!-- Hasil Data BMI -->
+    <div class="data-container">
+        <h2>Hasil Perhitungan BMI</h2>
+        <table id="bmiTable">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Berat (kg)</th>
+                    <th>Tinggi (cm)</th>
+                    <th>BMI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data akan diisi secara dinamis -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/script.js" defer></script>
+</body>
+
+</html>

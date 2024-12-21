@@ -1,0 +1,228 @@
+/* General Styling */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body.center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container_manual {
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    color: #007bff;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+/* Button Styling */
+
+button {
+    margin: 0;
+    /* Reset margin default */
+    padding: 0;
+    /* Reset padding default */
+}
+
+.button-group {
+    display: flex;
+    /* Gunakan flexbox */
+    justify-content: center;
+    /* Tengah horizontal */
+    /* Tengah vertikal */
+    gap: 80px;
+    /* Jarak antar tombol */
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* Photos Section */
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.photo-frame {
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 180px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-frame img {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.photo-frame p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+/* Form and Input Styling */
+
+.form-box,
+.input-box {
+    display: flex;
+    flex-direction: column;
+    /* Susunan label dan select secara vertikal */
+    max-width: 300px;
+    /* Batas lebar maksimal */
+    margin: 10px auto;
+    /* Pusatkan elemen */
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Tambahkan border untuk tampilan rapi */
+    border-radius: 8px;
+    /* Membuat sudut melengkung */
+    background-color: #f9f9f9;
+    /* Latar belakang ringan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Tambahkan bayangan untuk elegansi */
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-item label,
+.input-box label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-item input,
+.form-item select,
+.input-box select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-box select:focus {
+    border-color: #007bff;
+    /* Warna fokus biru */
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+    /* Efek glow fokus */
+}
+
+
+/* Table Styling */
+
+.data-container {
+    max-width: 600px;
+    /* Sesuaikan lebar maksimal */
+    margin: 20px auto;
+    /* Buat tabel terpusat */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+
+/* Tabel lebih kompak */
+
+#bmiTable {
+    width: 100%;
+    /* Tabel menyesuaikan lebar container */
+    border-collapse: collapse;
+    font-size: 14px;
+    /* Ukuran teks lebih kecil */
+    text-align: left;
+}
+
+#bmiTable th,
+#bmiTable td {
+    padding: 8px 12px;
+    /* Ruang antar teks lebih kecil */
+    border: 1px solid #ddd;
+}
+
+#bmiTable th {
+    background-color: #f2f2f2;
+    /* Warna latar untuk header */
+    font-weight: bold;
+}
+
+
+/* Hilangkan margin berlebih */
+
+.container,
+.chart-container {
+    margin-bottom: 20px;
+}
+
+
+/* Chart Container */
+
+.chart-container {
+    margin: 20px auto;
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+}
